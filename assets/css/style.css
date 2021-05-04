@@ -1,0 +1,147 @@
+/* Utility */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.contmax{
+    height: 800px;
+    width: 950px;
+}
+
+/* Header */
+
+header{
+    height: 130px;
+    width: 100%;
+    background-color: #FDBB40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    padding-left: 50px;
+    font-size: 35px;
+}
+
+header img{
+    width: 230px;
+    height: 230px;
+    margin-right: -100px;
+}
+
+.burgername{
+    margin-left: 50px;
+    margin-top: 50px;
+
+}
+
+#name_burger{
+    border: white;
+    font-size: 30px;
+}
+
+#name_burger:focus { 
+    outline: none !important;
+    border-color: white;
+}
+
+/* Main */
+
+.maincont{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.maincont h1{
+    padding-bottom: 35px;
+}
+
+.form_group{
+    height: 70px;
+    width: 400px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.form_group img{
+    height: 40px;
+    width: 40px;
+    margin-right: 30px;
+}
+
+.form_group label{
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.form_group input{
+    margin-right: 20px;
+}
+
+.form_group span{
+    color: #D33359;
+}
+
+.contdiscount{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.contdiscount span{
+    font-size: 20px;
+}
+
+.contdiscount input{
+    width: 500px;
+    height: 30px;
+    margin-left: 30px;
+    background-color: #FFF5E2;
+    border: none;
+    text-align: center;
+}
+
+#discount:focus{
+    outline: none !important;
+    border-color: #FFF5E2;
+}
+
+.mainbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.mainbutton button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #FDBB40;
+    font-size: 15px;
+}
+
+/* Footer */
+
+footer{
+    height: 90px;
+    width: 100%;
+    background-color: #D33359;
+    color: white;
+    margin-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

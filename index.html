@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Burger</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="contmax">
+        
+        <!-- Header -->
+        <header>
+            <h1>BURGERLANDIA</h1>
+            <img src="./assets/img/burger-top.png" alt="">
+        </header>
+        <!-- /Header -->
+
+        <!-- Main -->
+        <main>
+            <div class="burgername">
+                <input type="text" name="burger" id="name_burger" placeholder="Name Your Burger">
+            </div>
+            <div class="maincont clearfix">
+                <h1>Ingredients:</h1>
+                <div class="form_group">
+                    <img src="./assets/img/cheese.svg" alt="">
+                    <label for="cheese">Cheese</label>
+                    <input type="checkbox" name="cheese" id="cheese" data-price="2">
+                    <span>Add</span>
+                </div>
+                <div class="form_group">
+                    <img src="./assets/img/tomato.svg" alt="">
+                    <label for="tomato">Tomato</label>
+                    <input type="checkbox" name="tomato" id="tomato" data-price="1">
+                    <span>Add</span>
+                </div>
+                <div class="form_group">
+                    <img src="./assets/img/fried-egg.svg" alt="">
+                    <label for="egg">Eggs</label>
+                    <input type="checkbox" name="egg" id="egg" data-price="2.5">
+                    <span>Add</span>
+                </div>
+                <div class="form_group">
+                    <img src="./assets/img/lettuce.svg" alt="">
+                    <label for="lettuce">Lettuce</label>
+                    <input type="checkbox" name="lettuce" id="lettuce" data-price="1">
+                    <span>Add</span>
+                </div>
+                <div class="form_group">
+                    <img src="./assets/img/mustard.svg" alt="">
+                    <label for="mustard">Mustard</label>
+                    <input type="checkbox" name="mustard" id="mustard" data-price="0.5">
+                    <span>Add</span>
+                </div>
+                <div class="form_group">
+                    <img src="./assets/img/ketchup.svg" alt="">
+                    <label for="ketchup">Ketchup</label>
+                    <input type="checkbox" name="ketchup" id="ketchup" data-price="0.5">
+                    <span>Add</span>
+                </div>
+            </div>
+            <div class="contdiscount">
+                <span>Discount Coupon:</span>
+                <input type="text" name="discount" id="discount">
+            </div>
+            <div class="mainbutton">
+                <button id="calculate">Calculate</button>
+            </div>
+        </main>
+        <!-- /Main -->
+
+        <!-- Footer -->
+        <footer>
+            <h2>Your Price</h2>
+            <h2 id="finalprice"></h2>
+        </footer>
+        <!-- /Footer -->
+    </div>
+    
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
